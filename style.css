@@ -1,6 +1,6 @@
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-image: linear-gradient(to right top, #6bd193, #3fd6c3, #45d7e8, #79d4fd, #adcfff, #cbcbff, #e8c7f7, #ffc4e9, #ffc0d1, #ffc6a5, #ffdd77, #fbfb5f);
     color: rgb(68, 63, 63);
     margin: 0;
     min-height: 100vh;
@@ -52,33 +52,35 @@ img {
 
 .container {
     display: flex;
-    align-items: flex-start; /* Makes the height differ */
+    /* align-items: flex-start; Makes the height differ */
     gap: 50px;
-    margin: 30px 0;
+    margin: 0;
+    flex: 1;
 }
 
 .container > * { /* Makes columns even width */
-    flex: 1;
+    /* flex: 1; */
 }
 
 /* L CONTENT */
 /* L CONTENT */
 
 .left {
-    margin-left: 5%;
-    background-color: rgba(252, 249, 249, 0.4);
-    /* border: 1px solid #eee; */
     padding: 1rem;
+    width: 70%;
+    background-color: rgba(252, 249, 249, 0.4);
 }
 
 /* R CONTENT */
 /* R CONTENT */
+.right-container {
+    display: flex;
+}
 
 .right {
-    margin-right: 5%;
-    background-color: rgba(252, 249, 249, 0.4);
-    /* border: 1px solid #eee; */
+    margin-right: 3rem;
     padding: 1rem;
+    background-color: rgba(252, 249, 249, 0.4);
 }
 
 a {
@@ -88,8 +90,8 @@ a {
 
 .bottom-nav {
     display: flex;
-    background-color: rgb(68, 63, 63, .7);
-    color: white;
+    background-color: rgb(247, 247, 247, .5);
+    color: black;
     padding: 16px;
     align-items: center;
     justify-content: center;
